@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Sentiment Analyzer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 2em;
+        }
+
+        h1 {
+            color: #008080;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        h3 {
+            color: #008080;
+        }
+
+        p {
+            margin-bottom: 1.25em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 0.2em 0.4em;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Review Sentiment Analyzer</h1>
+
+    <h2>Review Analyzer</h2>
+
+    <h3>Table of Contents:</h3>
+
+    <ul>
+        <li>Description</li>
+        <li>Installation</li>
+        <li>Usage</li>
+        <li>File Structure</li>
+        <li>Technologies Used</li>
+        <li>Contributing</li>
+        <li>License</li>
+    </ul>
+
+    <h3>Description:</h3>
+
+    <p>The Review Analyzer is a Python project designed to analyze text sentiments and provide insights into the sentiment, polarity, and subjectivity of reviews. It includes two main components:</p>
+
+    <ol>
+        <li>Analyze Text: Users can input text, and the application will perform sentiment analysis, displaying the polarity, subjectivity, and an overall sentiment classification (Positive, Negative, or Neutral).</li>
+        <li>Analyze CSV: Users can upload a CSV, Excel, or Parquet file containing a column of reviews. The application processes the reviews, conducts sentiment analysis, and adds columns for polarity, subjectivity, and sentiment to the dataset. Users can then download the analyzed data as a CSV file.</li>
+    </ol>
+
+    <h3>Installation:</h3>
+
+    <ol>
+        <li>Clone the repository:</li>
+        <code>git clone https://github.com/your-username/review-analyzer.git</code>
+        <li>Install the required dependencies:</li>
+        <code>pip install -r requirements.txt</code>
+    </ol>
+
+    <h3>Usage:</h3>
+
+    <ol>
+        <li>Run the main.py file:</li>
+        <code>streamlit run main.py</code>
+        <li>Open the provided link in your browser and interact with the web application.</li>
+    </ol>
+
+    <h3>File Structure:</h3>
+
+    <ul>
+        <li>main.py: The main Streamlit application file.</li>
+        <li>Review_Analyzer.py: Contains functions for text preprocessing, sentiment analysis, and data analysis.</li>
+        <li>requirements.txt: Lists the required Python packages.</li>
+    </ul>
+
+    <h3>Technologies Used:</h3>
+
+    <ul>
+        <li>Python</li>
+        <li>Streamlit</li>
+        <li>Pandas</li>
+        <li>NLTK</li>
+        <li>TextBlob</li>
+    </ul>
+
+    <h3>License:</h3>
+
+    <p>Distributed under the MIT License. See LICENSE for more information.</p>
+
+</body>
+
+</html>
