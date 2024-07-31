@@ -1,60 +1,77 @@
-## Review_sentiment_analyzer
+# Review Sentiment Analyzer
 
-## Table of Contents :
+This repository contains a sentiment analysis model implemented using a Jupyter Notebook. The model is trained to classify the sentiment of textual reviews (e.g., positive, negative).
 
-•	Description
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Model Description](#model-description)
+- [Data](#data)
+- [Results](#results)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
+- [Demo](#demo)
 
-•	Installation
+## Installation
 
-•	Usage
+To run the code in this repository, you need to have Python and Jupyter Notebook installed on your machine. Follow these steps to set up the environment:
 
-•	File Structure
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/HaseebAhmed2003/Review_sentiment_analyzer.git
+    cd Review_sentiment_analyzer
+    ```
 
-•	Technologies Used
+2. Create a virtual environment:
+    ```bash
+    python -m venv venv
+    source venv/bin/activate   # On Windows, use `venv\Scripts\activate`
+    ```
 
-•	Contributing
+3. Install the required packages:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-•	License
+## Usage
 
+1. Start Jupyter Notebook:
+    ```bash
+    jupyter notebook
+    ```
 
-## Description :
+2. Open the `review_sentiment_analyzer.ipynb` notebook.
 
-The Review Analyzer is a Python project designed to analyze text sentiments and provide insights into the sentiment, polarity, and subjectivity of reviews. It includes two main components:
-1.	Analyze Text: Users can input text, and the application will perform sentiment analysis, displaying the polarity, subjectivity, and an overall sentiment classification (Positive, Negative, or Neutral).
-2.	Analyze CSV: Users can upload a CSV, Excel, or Parquet file containing a column of reviews. The application processes the reviews, conducts sentiment analysis, and adds columns for polarity, subjectivity, and sentiment to the dataset. Users can then download the analyzed data as a CSV file.
+3. Run the cells in the notebook to train and evaluate the sentiment analysis model.
 
-## Installation :
-1.	Clone the repository:
-git clone https://github.com/your-username/review-analyzer.git 
-2.	Install the required dependencies:
-pip install -r requirements.txt
+## Model Description
 
-## Usage :
-1.	Run the main.py file:
-streamlit run main.py 
-2.	Open the provided link in your browser and interact with the web application.
+The sentiment analysis model is designed to classify the sentiment of textual reviews. The notebook provides step-by-step instructions for data preprocessing, model training, and evaluation.
 
-## File Structure :
+## Data
 
-•	main.py: The main Streamlit application file.
+The dataset used for training the model should be placed in the `data` directory. Ensure that the data is properly labeled and formatted according to the requirements specified in the notebook.
 
-•	Review_Analyzer.py: Contains functions for text preprocessing, sentiment analysis, and data analysis.
+## Results
 
-•	requirements.txt: Lists the required Python packages.
+The notebook includes evaluation metrics and visualizations to assess the performance of the trained model. Results will be displayed as output cells in the notebook.
 
-## Technologies Used :
+## Contributing
 
-•	Python
+Contributions to this repository are welcome. If you have suggestions or improvements, please open an issue or submit a pull request.
 
-•	Streamlit
+## License
 
-•	Pandas
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-•	NLTK
+## Acknowledgements
 
-•	TextBlob
+- Thanks to the open-source community for providing valuable resources and tools.
+- Special thanks to [Haseeb Ahmed](https://github.com/HaseebAhmed2003) for creating this project.
 
-## License :
+## Demo
 
-Distributed under the MIT License. See LICENSE for more information.
+You can try out the review sentiment analyzer model in the Hugging Face Space embedded below:
 
+[Review Sentiment Analyzer Demo](https://huggingface.co/spaces/Abdul-Haseeb/Review-Sentiment-Analyzer)
